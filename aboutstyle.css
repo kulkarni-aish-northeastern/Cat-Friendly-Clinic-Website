@@ -1,0 +1,153 @@
+.main
+  {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 1rem;
+
+    height: 100%;
+  }
+
+ 
+
+  #card1
+{
+    grid-column: 1/4;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: blanchedalmond;
+    border: 1px solid darkorange;
+    box-shadow: 0 0 3px black;
+
+    border-radius: 2rem;
+    padding: 1rem;
+
+}
+
+.card_pic{
+    aspect-ratio: 1/1;
+
+    height: 100px;
+}
+
+.card1_heading{
+    color: rgb(214, 129, 25);
+
+    text-decoration: underline;
+
+}
+
+.card1_link
+{
+    
+    color: rgb(20, 89, 149);
+
+    text-decoration: none;
+
+    position: relative;
+    margin-top: -10px;
+    padding: 1rem;
+   
+}
+
+.card1_link:hover{
+    box-shadow: 10px 10px 5px 5px darkgray;
+}
+#card2
+{
+    grid-column: 4/7;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(188, 211, 176);
+    border: 1px solid darkgreen;
+    box-shadow: 0 0 3px black;
+
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.card2_heading{
+    color: rgb(18, 185, 21);
+
+    text-decoration: underline;
+
+}
+
+
+
+#card3
+{
+    grid-column: 7/10;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(176, 196, 211);
+    border: 1px solid darkblue;
+    box-shadow: 0 0 3px black;
+
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.card3_heading{
+    color: rgb(52, 132, 185);
+
+    text-decoration: underline;
+
+}
+
+
+#card4
+{
+    grid-column: 10/13;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(202, 172, 215);
+    border: 1px solid rgb(89, 12, 78);
+    box-shadow: 0 0 3px black;
+
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.card4_heading{
+    color: rgb(179, 56, 190);
+
+    text-decoration: underline;
+
+}
+
+@media screen and (max-width: 44rem) {
+    .main #card1{
+
+        grid-column: span 12;
+  
+  
+      }
+      .main #card2{
+  
+          grid-column: span 12;
+  
+        }
+        .main #card3{
+  
+          grid-column: span 12;
+  
+        }
+        .main #card4{
+  
+          grid-column: span 12;
+  
+        }
+}

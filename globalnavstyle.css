@@ -1,0 +1,32 @@
+.global-nav__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    padding: 1rem;
+    margin: 0;
+
+    list-style: none;
+}
+
+.global-nav__link{
+   display: inline-block;
+
+   padding: 0.5rem 1rem;
+
+
+}
+
+.global-nav__link:hover{
+    background-color: rgb(186, 186, 249);
+    color: black;
+}
+
+@media screen and (max-width: 44rem) {
+    .global-nav__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    
+}
+}
